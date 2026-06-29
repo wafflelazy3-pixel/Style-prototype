@@ -1,0 +1,321 @@
+/* Merged stylesheet — style.css + features.css
+   Generated for easy copy-paste deployment
+*/
+
+/* --- style.css content --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111111; 
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+
+.gold-text {
+    color: #C5A880; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(17,17,17,0.8), rgba(17,17,17,0));
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #C5A880;
+}
+
+.nav-links a.premium-link {
+    color: #C5A880;
+    font-weight: 600;
+}
+
+.btn-premium {
+    background-color: #C5A880;
+    color: #111111;
+    border: none;
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-premium:hover {
+    background-color: #E2C7A1;
+    box-shadow: 0px 4px 15px rgba(197, 168, 128, 0.4);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.9) 30%, rgba(17, 17, 17, 0.4));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #C5A880;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: #CCCCCC;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+
+/* --- features.css content --- */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0b0c10; /* Darker, deep luxury background */
+    color: #ffffff;
+    padding: 60px 5%;
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.showcase-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.showcase-header span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #C5A880; /* Champagne Gold */
+    font-weight: 600;
+}
+
+.showcase-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+.showcase-header p {
+    color: #888888;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Section Controls */
+.grand-section {
+    margin-bottom: 100px;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #555555;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 10px;
+}
+
+/* Feature 1: Luxury Stats Grid */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #111215;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #1a1c23;
+    transition: all 0.4s ease;
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    font-size: 13px;
+    color: #888888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Gold highlighted border variant */
+.stat-box.gold-border {
+    border: 1px solid #C5A880;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    background: #16181f;
+    border-color: #C5A880;
+}
+
+/* Feature 2: Glassmorphic Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.premium-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.card-link {
+    color: #C5A880;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+/* Hover States for Cards */
+.premium-card:hover {
+    background: rgba(197, 168, 128, 0.05);
+    border-color: rgba(197, 168, 128, 0.3);
+    transform: translateY(-8px);
+}
+
+.premium-card.active-card {
+    border-color: rgba(197, 168, 128, 0.5);
+    background: linear-gradient(to bottom, rgba(197, 168, 128, 0.02), rgba(17, 18, 21, 0.2));
+}
+
+.premium-card:hover .card-link {
+    color: #ffffff;
+}

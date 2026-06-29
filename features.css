@@ -1,0 +1,166 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0b0c10; /* Darker, deep luxury background */
+    color: #ffffff;
+    padding: 60px 5%;
+}
+
+.showcase-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+.showcase-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.showcase-header span {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #C5A880; /* Champagne Gold */
+    font-weight: 600;
+}
+
+.showcase-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+.showcase-header p {
+    color: #888888;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Section Controls */
+.grand-section {
+    margin-bottom: 100px;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #555555;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 10px;
+}
+
+/* Feature 1: Luxury Stats Grid */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #111215;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #1a1c23;
+    transition: all 0.4s ease;
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    font-size: 13px;
+    color: #888888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Gold highlighted border variant */
+.stat-box.gold-border {
+    border: 1px solid #C5A880;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    background: #16181f;
+    border-color: #C5A880;
+}
+
+/* Feature 2: Glassmorphic Cards Grid */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.premium-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.card-link {
+    color: #C5A880;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+/* Hover States for Cards */
+.premium-card:hover {
+    background: rgba(197, 168, 128, 0.05);
+    border-color: rgba(197, 168, 128, 0.3);
+    transform: translateY(-8px);
+}
+
+.premium-card.active-card {
+    border-color: rgba(197, 168, 128, 0.5);
+    background: linear-gradient(to bottom, rgba(197, 168, 128, 0.02), rgba(17, 18, 21, 0.2));
+}
+
+.premium-card:hover .card-link {
+    color: #ffffff;
+}
